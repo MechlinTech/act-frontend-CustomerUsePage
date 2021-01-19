@@ -16,7 +16,7 @@ export const customeruseReduser = (state = initialstate, action) => {
                 ...state,
                 selectedItem: action.payload
             }
-        } break
+        }
         default: { return { ...state } }
     }
 }

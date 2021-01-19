@@ -27,7 +27,7 @@ const CustomersUse = (props) => {
         customer.entertainment.length > 0 ? setEnt(customer.entertainment) : setEnt([])
         customer.outsideview.length > 0 ? setOandV(customer.outsideview) : setOandV([])
 
-    }, [])
+    }, [customer])
 
     const handleGenralCheck = (item) => {
         if (Genral.includes(item)) {
@@ -259,7 +259,7 @@ const CustomersUse = (props) => {
                 </Row>
                 <Row className="mt-4 mb-5 pb-5">
                     <Col xs={4} className="pl-2 text-left">
-                        <Link  to='/customerselections'> < div onClick={() => handleUpdate()} > <Btn2 text="Update Calender & Continue" /> </div></Link>
+                        <Link to='/customerselections'> < div onClick={() => handleUpdate()} > <Btn2 text="Update Calender & Continue" /> </div></Link>
                     </Col>
                     <Col xs={4} className=" text-left">
                         <Link to='/'><Btn3 text="Cancel" /></Link>
